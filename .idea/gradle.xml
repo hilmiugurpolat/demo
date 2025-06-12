@@ -11,6 +11,7 @@
             <option value="$PROJECT_DIR$" />
             <option value="$PROJECT_DIR$/AuthMicroservice" />
             <option value="$PROJECT_DIR$/UserMicroservice" />
+            <option value="$PROJECT_DIR$/tste" />
           </set>
         </option>
       </GradleProjectSettings>
