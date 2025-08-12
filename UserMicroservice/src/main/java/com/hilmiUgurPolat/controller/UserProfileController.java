@@ -5,6 +5,7 @@ import com.hilmiUgurPolat.document.UserProfile;
 import com.hilmiUgurPolat.dto.request.CreateUserRequestDto;
 import com.hilmiUgurPolat.service.UserProfileService;
 import lombok.RequiredArgsConstructor;
+import org.apache.coyote.Response;
 import org.springframework.http.ResponseEntity;
 import org.springframework.web.bind.annotation.*;
 
@@ -27,5 +28,11 @@ public class UserProfileController {
     @GetMapping(GET_ALL)
     public ResponseEntity<List<UserProfile>> getAll(){
         return ResponseEntity.ok(userProfileService.getAll());
+    }
+
+
+    @GetMapping("/upper-name")
+    public ResponseEntity<String> upperNAme(String name){
+        return ResponseEntity.ok(userProfileService.upperName(name));
     }
 }
